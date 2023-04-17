@@ -18,5 +18,7 @@ listEl.style.display = "flex"
 listEl.style.listStyle = 'none'
 
 const v = images.map(({url: src, alt}) => {
-  listEl.insertAdjacentHTML("beforeend", `<li><img src='${src}' alt='${alt}' width='100%'></li>`)
+  return `<li><img src='${src}' alt='${alt}' width='100%'></li>`
 })
+
+listEl.insertAdjacentHTML("beforeend", `${v}`)
