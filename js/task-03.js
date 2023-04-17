@@ -17,8 +17,8 @@ const listEl = document.querySelector('.gallery')
 listEl.style.display = "flex"
 listEl.style.listStyle = 'none'
 
-const v = images.map(({url: src, alt}) => {
+const itemEl = images.map(({url: src, alt}) => {
   return `<li><img src='${src}' alt='${alt}' width='100%'></li>`
 })
 
-listEl.insertAdjacentHTML("beforeend", `${v}`)
+listEl.insertAdjacentHTML("beforeend", `${itemEl}`)
