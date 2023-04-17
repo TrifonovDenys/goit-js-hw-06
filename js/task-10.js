@@ -19,6 +19,7 @@ function createBoxes(amount) {
 
 buttonCreate.addEventListener('click', () => {
   divBoxes.innerHTML = ''
+  str = ''
   createBoxes(inputEl.valueAsNumber)
 })
 
