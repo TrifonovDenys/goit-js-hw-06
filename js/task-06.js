@@ -9,7 +9,7 @@ function onImputFocus() {
 
 function onImputBlur() {
   const inputNoSpaceLength = inputEl.value.trim().length
-  if (inputNoSpaceLength >= (+inputEl.dataset.length)) {
+  if (inputNoSpaceLength === (+inputEl.dataset.length)) {
     inputEl.classList.add('valid')
   } else {
     inputEl.classList.add('invalid')

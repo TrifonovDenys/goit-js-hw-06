@@ -6,8 +6,9 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const ingredientsList = document.querySelector('#ingredients')
 
+function appendItems () {
+const ingredientsList = document.querySelector('#ingredients')
 const ingredientsArr = ingredients.map(el => {
   const ingredientEl = document.createElement('li')
   ingredientEl.textContent = el
@@ -15,4 +16,7 @@ const ingredientsArr = ingredients.map(el => {
   return ingredientEl
 })
 
-ingredientsList.append(...ingredientsArr)
+  ingredientsList.append(...ingredientsArr)
+}
+
+appendItems()

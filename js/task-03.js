@@ -22,3 +22,4 @@ const itemEl = images.map(({url: src, alt}) => {
 })
 
 listEl.insertAdjacentHTML("beforeend", `${itemEl}`)
+
