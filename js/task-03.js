@@ -13,13 +13,16 @@ const images = [
   },
 ];
 
-const listEl = document.querySelector('.gallery')
-listEl.style.display = "flex"
-listEl.style.listStyle = 'none'
+function insertLi(){
+  const listEl = document.querySelector('.gallery')
+  listEl.style.display = "flex"
+  listEl.style.listStyle = 'none'
 
-const itemEl = images.map(({url: src, alt}) => {
-  return `<li><img src='${src}' alt='${alt}' width='100%'></li>`
-})
+  const itemEl = images.map(({url: src, alt}) => {
+    return `<li><img src='${src}' alt='${alt}' width='100%'></li>`
+  })
 
-listEl.insertAdjacentHTML("beforeend", `${itemEl}`)
+  listEl.insertAdjacentHTML("beforeend", `${itemEl}`)
+}
 
+insertLi()
